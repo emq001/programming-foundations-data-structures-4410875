@@ -51,11 +51,11 @@ Tomadas por el dueño del producto durante la planificación:
 
 Decisiones recomendadas y documentadas (no bloquean el arranque, salvo la primera para su bloque):
 
-* **D1 — Fórmula del Padre Nuestro por las intenciones del Papa**: el texto definitivo requiere dictamen del revisor teológico ANTES de codificar el bloque 38-B. Bloquea solo ese bloque; el resto del spec 38 avanza.
+* **D1 — Fórmula del Padre Nuestro por las intenciones del Papa**: ~~requiere dictamen previo~~ **Resuelta (2026-08-07)**: el dueño del producto aprobó avanzar con la fórmula tradicional; el dictamen formal del revisor teológico se documenta en el PR de implementación del bloque 38-B (gobernanza habitual de contenido doctrinal).
 * **D4 — Enmienda a la regla de GPS**: se mantiene "la posición del usuario nunca viaja al servidor"; se añade la excepción explícita "la ubicación de un lugar (templo, evento) enviada por acción deliberada y consentida del usuario sí puede viajar". Registrar como nota de ADR.
 * **D8 — Reflexión "¿qué me dijo Dios hoy?"**: se cifra localmente con `JournalCrypto` (AES-256-GCM), coherente con ADR-004; nunca viaja al servidor.
 * **D9 — Anti-spam de push**: tope de frecuencia semanal por tipo, quiet hours, y el tipo "oración urgente" NO salta el opt-out del usuario.
-* **Asesoría legal (spec 49)**: el disclaimer de donaciones se revisa con asesoría legal antes del lanzamiento del piloto.
+* **Asesoría legal (spec 49)**: el disclaimer de donaciones se revisa con asesoría legal antes del lanzamiento del piloto. Borrador de trabajo entregado en `borrador-disclaimer-donaciones.md`; el dueño del producto lo valida con su abogado.
 
 ## 4. Mapa de dependencias
 

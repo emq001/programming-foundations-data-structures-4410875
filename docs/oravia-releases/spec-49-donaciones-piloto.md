@@ -13,7 +13,7 @@ Funcionalidad nueva de punta a punta: un apartado social donde los usuarios dona
 Como equipo, queremos el modelo de datos, la moderación y la cobertura legal resueltos primero.
 
 * **AC-A1.1** — Tabla `donation_items`: título, descripción, `condition` CHECK (`'nuevo'`,`'buen_estado'`,`'usado'`), fotos (bucket `parish-media`, strip EXIF), instrucciones, `parish_id` del punto de entrega (obligatorio en el piloto), ciclo `pending → published → reserved → delivered → closed`; toda publicación nace `pending` y pasa moderación editorial (patrón existente). RLS estricta: nadie ve datos del donante más allá del alias.
-* **AC-A1.2** — **Disclaimer de no responsabilidad** (texto nuevo en `legal/`, revisado con asesoría legal): OraVia no se responsabiliza por el intercambio ni necesariamente conoce a las personas que reciben donaciones. Aceptación obligatoria registrada con timestamp **al publicar y al solicitar**.
+* **AC-A1.2** — **Disclaimer de no responsabilidad** (texto nuevo en `legal/`, revisado con asesoría legal): OraVia no se responsabiliza por el intercambio ni necesariamente conoce a las personas que reciben donaciones. Aceptación obligatoria registrada con timestamp **al publicar y al solicitar**. Borrador de trabajo entregado en `borrador-disclaimer-donaciones.md` (esta carpeta), pendiente de validación por el abogado del dueño del producto.
 
 ## Bloque B — Publicar un artículo
 
@@ -48,7 +48,7 @@ Como usuario, quiero mecanismos de protección claros.
 ## Decisiones del usuario (2026-08-07)
 
 * Piloto **exclusivamente vía parroquias verificadas**; se evalúa antes de abrir modalidad directa.
-* El disclaimer pasa por asesoría legal antes del lanzamiento.
+* El disclaimer pasa por asesoría legal antes del lanzamiento. El dueño del producto valida el borrador `borrador-disclaimer-donaciones.md` con su abogado.
 
 ## Verificación
 

@@ -48,7 +48,7 @@ Como orante, quiero leer el texto del Evangelio dentro de Lectio Divina, con exp
 
 ## Decisiones del usuario (2026-08-07)
 
-* El bloque B espera el dictamen del revisor teológico sobre la fórmula del Padre Nuestro por el Papa (D1); los bloques A y C avanzan sin él.
+* **D1 resuelta a nivel de planning**: el dueño del producto aprobó avanzar con la fórmula tradicional del Padre Nuestro por las intenciones del Papa. El dictamen formal del revisor teológico se documenta en el PR de implementación del bloque B (gobernanza de contenido doctrinal de la casa). El bloque B ya no está bloqueado para planificarse ni desarrollarse.
 
 ## Verificación
 
