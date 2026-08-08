@@ -43,7 +43,7 @@ Los specs continúan la serie existente (27–37) con los números **38–49**.
 Tomadas por el dueño del producto durante la planificación:
 
 * **Distribución en dos releases**: R8 "Orar con hondura" + R9 "Iglesia viva" + R9.1 "Manos abiertas", como se describe arriba.
-* **Donaciones (M12)**: piloto **exclusivamente vía parroquias verificadas** como punto neutral de entrega. Sin direcciones personales, sin chat entre usuarios. Se evalúa el piloto antes de considerar intercambio directo.
+* **Donaciones (M12)** — *actualizada el 2026-08-08 por la Especificación Funcional v2 del dueño del producto*: modelo de **reserva digital + Punto Comunitario de Encuentro + entrega directa** donante→receptor. La parroquia solo administra disponibilidad (ventanas, capacidad, fechas bloqueadas) y **nunca recibe, almacena, inspecciona ni custodia artículos**; quedan prohibidos los flujos Donante→Parroquia→Receptor y Donante→OraVia→Receptor. Se mantienen de la decisión original (2026-08-07): piloto acotado vía parroquias verificadas, sin direcciones personales, sin chat libre (solo mensajes estructurados). La decisión original de custodia parroquial con confirmaciones del admin queda **sustituida**. Detalle completo en spec 49 v2.
 * **Encíclicas y Catecismo oficial (M2/M5)**: se incorporan como **enlaces oficiales** (vatican.va y fuentes oficiales) en Recursos Externos con tipo `web` y categorías. No se embebe texto → cero riesgo de licencia (CIC es de LEV; Youcat es editorial privada).
 * **Moderación de eventos (M11)**: equipo editorial en el CMS + **vía rápida para administradores de parroquia verificados** (aprobación exprés/automática).
 * **Temas visuales (M14)**: **variantes completas** (Camino, Juvenil, Sereno) en R9; en R8 se adelanta únicamente el selector claro/oscuro/sistema (hoy fijo en `ThemeMode.system`).
@@ -69,10 +69,14 @@ R8                                        R9
                                           46 (bucket parish-media + strip EXIF
                                               + cola CMS de aprobación)
                                                ├──► 47-C (volantes de eventos)
-                                               └──► 49-B (fotos de artículos)
+                                               ├──► 49-B (fotos de artículos)
+                                               └──► 49-D (panel admin parroquial:
+                                                    se extiende con ventanas de
+                                                    encuentro, capacidad y bloqueos)
 ```
 
-* Los recordatorios de planes (40-E), retos (41-C) y eventos (47-D1) usan el `ReminderScheduler` **local** existente (canales nuevos 1300+/1400+/1500+, siguiendo la convención 1001/1002/1100+/1200). **No dependen** del push remoto.
+* Los recordatorios de planes (40-E), retos (41-C), eventos (47-D1) y entregas de donaciones (49-G2) usan el `ReminderScheduler` **local** existente (canales nuevos 1300+/1400+/1500+/1600+, siguiendo la convención 1001/1002/1100+/1200). **No dependen** del push remoto.
+* **Coordinación 46↔49**: el spec 46 no cambia con la v2 de donaciones, pero quien implemente su panel de admin parroquial debe saber que 49 lo **extenderá con configuración de ventanas** (disponibilidad general), no con una cola de transacciones — la parroquia nunca ve operaciones individuales.
 * M15 (spec 44) y la reflexión de planes (40-C) reutilizan `JournalCrypto` (`lib/core/crypto/journal_crypto.dart`), el mismo cifrado del Diario y de las sesiones de Reconciliación.
 * El aviso de cuenta del Ranking (43-A) reutiliza `_LinkAccountPrompt`, extraído de `GroupsScreen` a widget compartido.
 * Las imágenes del Catecismo (42-D) y las variantes de tema (48) pasan por `section_visuals.dart`, que sigue siendo la única fuente de verdad visual (regla de la casa + test de contraste AA).
@@ -104,13 +108,13 @@ Si el calendario aprieta, los puestos 6–9 pueden cortarse como **R8.1** siguie
 | 1 | 46 Parroquias in situ | M13 | M | Funda bucket `parish-media`, strip EXIF y cola de aprobación en CMS. |
 | 2 | 47 Eventos católicos | M11 | XL | Reutiliza bucket, moderación y push (spec 45). |
 | 3 | 48 Temas visuales | M14 | L | Paralelizable: no depende de 46/47. |
-| 4 | 49 Donaciones piloto | M12 | XL | R9.1, tras asesoría legal del disclaimer. |
+| 4 | 49 Donaciones piloto (v2) | M12 | XL | R9.1, tras asesoría legal del disclaimer. La v2 (entrega directa + ventanas) amplía el alcance: si el calendario aprieta, partir en R9.1a (flujo núcleo: bloques A–E) y R9.1b (F–H, métricas), precedente R5.1. |
 
 ## 6. Riesgos
 
-* **CMS de un solo HTML**: R9 añade tres colas de moderación nuevas (altas de parroquia, eventos, donaciones) sobre `apps/admin-cms/index.html`. Presupuestar un mini-refactor del CMS al inicio de R9 o dentro de los specs 46-C/47-A/49-A.
+* **CMS de un solo HTML**: R9 añade tres colas de moderación nuevas (altas de parroquia, eventos, donaciones) sobre `apps/admin-cms/index.html`. La v2 de donaciones además suma al CMS: ciclo `CHANGES_REQUESTED`, tabla de políticas de categorías, cola de incidentes con `UNDER_REVIEW` y parámetros configurables (plazos, tolerancia, reglas de no-show). El mini-refactor del CMS al inicio de R9 pasa de recomendable a **necesario**.
 * **Contenido doctrinal nuevo** (38-B fórmula del Papa, 42-C ampliación del Catecismo, 41-D retos nuevos, 40-F planes nuevos): pasa por revisor teológico según la gobernanza existente. El Catecismo interno sigue siendo redacción propia con referencias numéricas al CIC — nunca texto literal (derechos LEV).
-* **Donaciones (49)**: riesgo legal y de seguridad más alto del plan; por eso es piloto parroquial aislado en R9.1 con disclaimer revisado legalmente.
+* **Donaciones (49)**: sigue siendo el riesgo legal y de seguridad más alto del plan; por eso es piloto aislado en R9.1 con disclaimer revisado legalmente. La v2 **elimina el riesgo de custodia parroquial** (la parroquia nunca recibe ni almacena artículos; criterio de éxito: 0 artículos en custodia) pero **introduce el encuentro presencial directo entre desconocidos**, mitigado con: punto comunitario en ventanas establecidas, tokens de operación sin datos personales, confirmación digital doble, reglas de no-show, reporte de incidentes con `UNDER_REVIEW` y pauta de emergencias.
 * **Privacidad**: toda nota espiritual nueva (faltas, reflexiones) es cifrada local y nunca sube al servidor; las fotos comunitarias se suben con strip de EXIF/geodatos; la posición del usuario nunca viaja (solo la de lugares, por acción explícita — D4).
 * **Operación de push (45)**: definir quién puede enviar y con qué límites antes de habilitar el panel (D9); auditoría de envíos en tabla `push_campaigns`.
 
@@ -138,4 +142,4 @@ Regla de la casa: **cada AC se verifica con un test nombrado con su identificado
 | 46 | `spec-46-parroquias-in-situ.md` | Registro de parroquias in situ y fotos |
 | 47 | `spec-47-eventos-catolicos.md` | Eventos católicos cercanos |
 | 48 | `spec-48-temas-visuales.md` | Temas visuales |
-| 49 | `spec-49-donaciones-piloto.md` | Donaciones solidarias (piloto parroquial) |
+| 49 | `spec-49-donaciones-piloto.md` | Donaciones Solidarias v2 (entrega directa en Punto Comunitario de Encuentro) |
