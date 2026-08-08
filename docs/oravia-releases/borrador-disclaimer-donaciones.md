@@ -4,6 +4,7 @@
 > Este texto NO debe publicarse en la app hasta ser revisado y aprobado por un abogado.
 > Referencia: spec 49 v2 "Donaciones Solidarias (piloto: entrega directa en Punto Comunitario de Encuentro)", HU-A2.
 > La v2 (2026-08-08) reemplaza al borrador del 2026-08-07, que describía a la parroquia como punto de recepción y entrega con custodia — modelo descartado por la Especificación Funcional v2.
+> **SUSTITUIDO POR LA ESPECIFICACIÓN LEGAL v2 (2026-08-08).** El enfoque de disclaimer único fue reemplazado por una arquitectura documental completa: ver `especificacion-legal-v2-donaciones.md` (esta carpeta) y su implementación en `legal/` (mapa en `legal/README.md`). Las Condiciones vigentes en borrador son `DONATIONS_TERMS_v2.0` (`legal/condiciones-donaciones-solidarias.md`). Este archivo se conserva solo como antecedente histórico del texto que alimentó ese documento.
 
 **Dónde se muestra:** pantalla de aceptación obligatoria antes de (a) publicar un artículo y (b) solicitar uno. La aceptación se registra con `TermsDocument`, `TermsVersion`, idioma, fecha/hora y acción (spec 49, AC-A2.2). El texto queda además disponible de forma permanente en la sección legal de la app (carpeta `legal/` del repositorio, junto a la política de privacidad).
 

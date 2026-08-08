@@ -1,7 +1,7 @@
 # Spec 49 — Donaciones Solidarias (piloto: entrega directa en Punto Comunitario de Encuentro)
 
 **Release:** 9.1 "Manos abiertas" · **Mejora origen:** M12 · **Esfuerzo:** XL · **Versión:** 2 (2026-08-08, reemplaza a la v1 del 2026-08-07)
-**ADRs:** 003 (cuenta vinculada) · **Dependencias:** spec 46 (bucket `parish-media` + strip EXIF, panel de admin parroquial), red de parroquias con admins verificados (specs 30/37/46), `ReminderScheduler` local (canales 1600+) · **Requisito previo:** asesoría legal del disclaimer (`borrador-disclaimer-donaciones.md`)
+**ADRs:** 003 (cuenta vinculada) · **Dependencias:** spec 46 (bucket `parish-media` + strip EXIF, panel de admin parroquial), red de parroquias con admins verificados (specs 30/37/46), `ReminderScheduler` local (canales 1600+) · **Requisito previo:** validación por abogado de la arquitectura legal (`especificacion-legal-v2-donaciones.md` + carpeta `legal/`; las Condiciones del apartado son `DONATIONS_TERMS_v2.0` en `legal/condiciones-donaciones-solidarias.md`)
 
 ## Contexto
 
