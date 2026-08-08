@@ -3,6 +3,7 @@
 > **BORRADOR DE TRABAJO — PENDIENTE DE VALIDACIÓN LEGAL.**
 > Este texto NO debe publicarse en la app hasta ser revisado y aprobado por un abogado.
 > Referencia: spec 49 "Donaciones solidarias (piloto parroquial)", AC-A1.2.
+> **Documento formal:** la versión preparada para la validación del abogado está en `legal/condiciones-donaciones-solidarias.md`.
 
 **Dónde se muestra:** pantalla de aceptación obligatoria antes de (a) publicar un artículo y (b) solicitar uno. La aceptación se registra con fecha y hora. El texto queda además disponible de forma permanente en la sección legal de la app (carpeta `legal/` del repositorio, junto a la política de privacidad).
 
