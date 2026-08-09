@@ -38,7 +38,9 @@ Los specs continúan la serie existente (27–37) con los números **38–49**.
 | M14 | 2-3 temas visuales seleccionables | 48 | R9 | L |
 | M12 | Apartado social de donaciones | 49 | R9.1 | XL |
 
-## 3. Decisiones del usuario (2026-08-07)
+## 3. Decisiones del usuario (2026-08-07, con actualizaciones)
+
+* **Operador legal del piloto de donaciones (2026-08-09)**: OraVia opera el piloto de Donaciones Solidarias bajo la figura de **persona individual** (el dueño del producto), difiriendo la constitución de una entidad a una fase posterior. Los documentos de `legal/` quedan con la figura fijada y los datos personales (nombre según DPI, domicilio contractual, contacto legal) por completar con el abogado, junto con la cláusula de jurisdicción propuesta. Riesgo aceptado y conocido: la responsabilidad recae en el patrimonio personal durante el piloto.
 
 Tomadas por el dueño del producto durante la planificación:
 

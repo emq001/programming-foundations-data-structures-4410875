@@ -2,7 +2,7 @@
 
 **DocumentID:** `PRIVACY_POLICY` · **Versión:** `v1.0-borrador` · **Idioma:** es (versión primaria)
 **Fecha del borrador:** 2026-08-08 · **Especificación origen:** Legal v2, §17–§19, §27, §36
-**Operador (responsable del tratamiento):** `[OPERADOR — pendiente de definir antes del lanzamiento]`
+**Operador (responsable del tratamiento):** `[OPERADOR — figura decidida (dueño del producto, 2026-08-09): PERSONA INDIVIDUAL para el piloto. Completar antes de publicar: nombre legal completo conforme a DPI, domicilio contractual en Guatemala y correo de contacto legal.]`
 
 > **AVISO INTERNO — NO PUBLICAR TODAVÍA.** Borrador pendiente de identificación de la entidad operadora y de validación final por abogado colegiado activo en Guatemala. Debe revisarse periódicamente ante cambios legislativos.
 
@@ -62,4 +62,4 @@ Cada versión es inmutable e identificada (esta es `PRIVACY_POLICY_v1.0`). Los c
 
 ## 12. Contacto
 
-`[OPERADOR y canal legal de contacto — completar antes de publicar.]`
+`[OPERADOR — figura decidida (dueño del producto, 2026-08-09): PERSONA INDIVIDUAL para el piloto. Completar antes de publicar: nombre legal completo conforme a DPI, domicilio contractual en Guatemala y correo de contacto legal.]`

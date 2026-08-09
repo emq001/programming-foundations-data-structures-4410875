@@ -2,7 +2,7 @@
 
 Implementa la **Especificación Legal v2** de Donaciones Solidarias (`docs/oravia-releases/especificacion-legal-v2-donaciones.md`). Principio rector: la protección jurídica no descansa exclusivamente en cláusulas de exoneración; el producto se diseña operacionalmente para reducir los riesgos (Legal by Design).
 
-> **ESTADO: BORRADORES — PENDIENTES DE VALIDACIÓN.** Ningún documento de esta carpeta debe publicarse en la app hasta (a) definir la entidad jurídica operadora de OraVia (los campos `[OPERADOR]` están pendientes) y (b) obtener la validación final de un abogado colegiado activo en Guatemala (spec v2, §31 y §39).
+> **ESTADO: BORRADORES — PENDIENTES DE VALIDACIÓN.** Ningún documento de esta carpeta debe publicarse en la app hasta (a) completar los datos del operador — figura ya decidida: PERSONA INDIVIDUAL para el piloto (2026-08-09); faltan nombre según DPI, domicilio y contacto legal en los campos `[OPERADOR]` y (b) obtener la validación final de un abogado colegiado activo en Guatemala (spec v2, §31 y §39).
 
 ## Mapa documental (spec v2, §2)
 

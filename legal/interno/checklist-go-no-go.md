@@ -5,7 +5,7 @@
 
 | # | Ítem | Estado | Evidencia / referencia |
 |---|---|---|---|
-| 1 | Entidad operadora definida (nombre legal, forma jurídica, domicilio, contacto legal) | ☐ Pendiente | Sustituir `[OPERADOR]` en Documentos A, B, C y E |
+| 1 | Entidad operadora definida (nombre legal, forma jurídica, domicilio, contacto legal) | ◐ Figura decidida: persona individual para el piloto (2026-08-09); faltan los datos personales | Completar `[OPERADOR]` en Documentos A, B, C y E con nombre según DPI, domicilio y contacto legal |
 | 2 | Términos Generales vigentes | ☐ Pendiente (borrador `GENERAL_TERMS_v1.0`) | `legal/terminos-generales.md` |
 | 3 | Condiciones de Donaciones Solidarias aprobadas | ☐ Pendiente (borrador `DONATIONS_TERMS_v2.0`) | `legal/condiciones-donaciones-solidarias.md` |
 | 4 | Política de Privacidad alineada | ☐ Pendiente (borrador `PRIVACY_POLICY_v1.0`) | `legal/politica-de-privacidad.md` |

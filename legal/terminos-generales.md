@@ -2,7 +2,7 @@
 
 **DocumentID:** `GENERAL_TERMS` · **Versión:** `v1.0-borrador` · **Idioma:** es (versión primaria)
 **Fecha del borrador:** 2026-08-08 · **Especificación origen:** Legal v2, §2–§3
-**Operador:** `[OPERADOR: nombre legal completo, forma jurídica, domicilio contractual y contacto legal — pendiente de definir antes del lanzamiento]`
+**Operador:** `[OPERADOR — figura decidida (dueño del producto, 2026-08-09): PERSONA INDIVIDUAL para el piloto. Completar antes de publicar: nombre legal completo conforme a DPI, domicilio contractual en Guatemala y correo de contacto legal.]`
 
 > **AVISO INTERNO — NO PUBLICAR TODAVÍA.** Borrador pendiente de identificación de la entidad operadora y de validación final por abogado colegiado activo en Guatemala.
 
@@ -64,7 +64,7 @@ La aceptación es afirmativa (sin aceptación por silencio ni casillas preselecc
 
 Estos términos se interpretarán de conformidad con las leyes de la República de Guatemala, sin perjuicio de los derechos y normas imperativas que resulten aplicables.
 
-`[PENDIENTE: cláusula de jurisdicción y mecanismo de resolución de controversias — se fijará tras confirmar la entidad jurídica operadora.]`
+**Propuesta de cláusula (borrador, sujeta a validación legal):** para cualquier controversia derivada de este documento, las partes procurarán primero una solución directa y de buena fe a través del canal legal de contacto del Operador; de no alcanzarse en un plazo razonable, se someterán a los tribunales competentes del domicilio del Operador en la República de Guatemala, sin perjuicio de los fueros y derechos imperativos que correspondan al usuario. `[Redacción definitiva a fijar por el abogado; depende del domicilio del Operador persona individual.]`
 
 ## 13. Idioma
 
@@ -72,4 +72,4 @@ La versión primaria es la redactada en español. Cuando exista versión en ingl
 
 ## 14. Identidad del operador y contacto
 
-`[OPERADOR: completar antes de publicar — ver spec Legal v2, §31.]`
+`[OPERADOR — figura decidida (dueño del producto, 2026-08-09): PERSONA INDIVIDUAL para el piloto. Completar antes de publicar: nombre legal completo conforme a DPI, domicilio contractual en Guatemala y correo de contacto legal.]`

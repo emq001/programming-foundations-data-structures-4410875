@@ -2,7 +2,7 @@
 
 **DocumentID:** `DONATIONS_TERMS` · **Versión:** `v2.0-borrador` · **Idioma:** es (versión primaria)
 **Fecha del borrador:** 2026-08-08 · **Especificación origen:** Legal v2 (`docs/oravia-releases/especificacion-legal-v2-donaciones.md`)
-**Operador:** `[OPERADOR: nombre legal completo, forma jurídica, domicilio contractual y contacto legal — pendiente de definir antes del lanzamiento]`
+**Operador:** `[OPERADOR — figura decidida (dueño del producto, 2026-08-09): PERSONA INDIVIDUAL para el piloto. Completar antes de publicar: nombre legal completo conforme a DPI, domicilio contractual en Guatemala y correo de contacto legal.]`
 
 > **AVISO INTERNO — NO PUBLICAR TODAVÍA.** Borrador pendiente de (a) identificación de la entidad operadora y (b) validación final por abogado colegiado activo en Guatemala (spec v2, §31 y §39). Esta versión sustituye a `DONATIONS_TERMS v1.0` (enfoque de disclaimer único).
 
@@ -135,7 +135,7 @@ OraVia atiende los requerimientos válidos de autoridades competentes conforme a
 
 Estas condiciones se interpretarán de conformidad con las leyes de la República de Guatemala, sin perjuicio de los derechos y normas imperativas que resulten aplicables.
 
-`[PENDIENTE: cláusula de jurisdicción y mecanismo de resolución de controversias — se fijará tras confirmar la entidad jurídica operadora.]`
+**Propuesta de cláusula (borrador, sujeta a validación legal):** para cualquier controversia derivada de este documento, las partes procurarán primero una solución directa y de buena fe a través del canal legal de contacto del Operador; de no alcanzarse en un plazo razonable, se someterán a los tribunales competentes del domicilio del Operador en la República de Guatemala, sin perjuicio de los fueros y derechos imperativos que correspondan al usuario. `[Redacción definitiva a fijar por el abogado; depende del domicilio del Operador persona individual.]`
 
 ## 21. Idioma
 
@@ -143,4 +143,4 @@ La versión primaria de estas Condiciones es la redactada en español. Cuando ex
 
 ## 22. Identidad del operador y contacto
 
-`[OPERADOR: nombre legal completo, forma jurídica, domicilio contractual, correo o mecanismo legal de contacto e información adicional legalmente requerida — completar antes de publicar.]`
+`[OPERADOR — figura decidida (dueño del producto, 2026-08-09): PERSONA INDIVIDUAL para el piloto. Completar antes de publicar: nombre legal completo conforme a DPI, domicilio contractual en Guatemala y correo de contacto legal.]`
