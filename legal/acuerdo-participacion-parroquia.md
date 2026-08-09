@@ -2,7 +2,7 @@
 
 **DocumentID:** `PARISH_AGREEMENT` · **Versión:** `v1.0-borrador` · **Idioma:** es (versión primaria)
 **Fecha del borrador:** 2026-08-08 · **Especificación origen:** Legal v2, §9–§11
-**Partes:** `[OPERADOR de OraVia — pendiente de definir]` y la parroquia identificada en el Anexo I.
+**Partes:** `[OPERADOR — figura decidida (dueño del producto, 2026-08-09): PERSONA INDIVIDUAL para el piloto. Completar antes de publicar: nombre legal completo conforme a DPI, domicilio contractual en Guatemala y correo de contacto legal.]` y la parroquia identificada en el Anexo I.
 
 > **AVISO INTERNO — NO FIRMAR TODAVÍA.** Borrador pendiente de identificación de la entidad operadora y de validación final por abogado colegiado activo en Guatemala. Cada parroquia piloto debe aceptar un ejemplar independiente de este acuerdo antes de habilitarse en la app.
 
@@ -60,7 +60,7 @@ Este acuerdo rige desde su aceptación y es de duración indefinida durante el p
 
 ## 11. Legislación aplicable
 
-Este acuerdo se interpretará de conformidad con las leyes de la República de Guatemala, sin perjuicio de los derechos y normas imperativas que resulten aplicables. `[PENDIENTE: jurisdicción y resolución de controversias tras definir la entidad operadora.]`
+Este acuerdo se interpretará de conformidad con las leyes de la República de Guatemala, sin perjuicio de los derechos y normas imperativas que resulten aplicables. **Propuesta de cláusula (borrador, sujeta a validación legal):** para cualquier controversia derivada de este documento, las partes procurarán primero una solución directa y de buena fe a través del canal legal de contacto del Operador; de no alcanzarse en un plazo razonable, se someterán a los tribunales competentes del domicilio del Operador en la República de Guatemala, sin perjuicio de los fueros y derechos imperativos que correspondan al usuario. `[Redacción definitiva a fijar por el abogado; depende del domicilio del Operador persona individual.]`
 
 ---
 
