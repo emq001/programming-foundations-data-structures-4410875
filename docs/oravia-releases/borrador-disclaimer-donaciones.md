@@ -3,6 +3,7 @@
 > **BORRADOR DE TRABAJO — PENDIENTE DE VALIDACIÓN LEGAL.**
 > Este texto NO debe publicarse en la app hasta ser revisado y aprobado por un abogado.
 > Referencia: spec 49 "Donaciones solidarias (piloto parroquial)", AC-A1.2.
+> **SUSTITUIDO POR LA ESPECIFICACIÓN LEGAL v2 (2026-08-08).** El enfoque de disclaimer único fue reemplazado por una arquitectura documental completa: ver `especificacion-legal-v2-donaciones.md` (esta carpeta) y su implementación en `legal/` (mapa en `legal/README.md`). Las Condiciones vigentes en borrador son `DONATIONS_TERMS_v2.0` (`legal/condiciones-donaciones-solidarias.md`). Este archivo se conserva solo como antecedente histórico.
 
 **Dónde se muestra:** pantalla de aceptación obligatoria antes de (a) publicar un artículo y (b) solicitar uno. La aceptación se registra con fecha y hora. El texto queda además disponible de forma permanente en la sección legal de la app (carpeta `legal/` del repositorio, junto a la política de privacidad).
 
